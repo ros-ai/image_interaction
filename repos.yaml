@@ -1,0 +1,9 @@
+repositories:
+  rviz2_sam_plugin:
+    type: git
+    url: https://github.com/ros-ai/rviz2_sam_plugin
+    version: main
+  ros_sam:
+    type: git
+    url: https://github.com/ros-ai/ros2_sam # TODO: replace upon merge of https://github.com/robot-learning-freiburg/ros_sam/pull/2
+    version: main
