@@ -9,11 +9,13 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rviz_common REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(pluginlib REQUIRED)
 
 set(image_interaction_dependencies
   rclcpp
   rviz_common
+  sensor_msgs
   pluginlib
 )
 
