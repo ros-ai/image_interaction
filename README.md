@@ -11,5 +11,5 @@
 Refer to [documentation](https://docs.ros.org/en/humble/Tutorials/Intermediate/Testing/CLI.html).
 
 ```shell
-ros2 run rviz2_sam_plugin test_sam_client # TODO: replace by colcon
+ros2 run image_interaction test_sam_client # TODO: replace by colcon
 ```

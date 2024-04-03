@@ -1,6 +1,6 @@
-#include "rviz2_sam_plugin/sam_client.hpp"
+#include "image_interaction/sam_client.hpp"
 
-namespace rviz2_sam_plugin {
+namespace image_interaction {
 SamClient::SamClient(const rclcpp::Node::SharedPtr node_ptr) : node_ptr_(node_ptr) {
   sam_client_ptr_ =
       node_ptr_->create_client<ros_sam_msgs::srv::Segmentation>("/sam_server/segment");
@@ -40,4 +40,4 @@ SamClient::sync_segmentation_request(const ros_sam_msgs::srv::Segmentation_Reque
   //   RCLCPP_INFO(node_ptr_->get_logger(), "Service %s returned %d",
   //               sam_client_ptr_->get_service_name(), result.get()->output_image.height);
 }
-} // end of namespace rviz2_sam_plugin
+} // end of namespace image_interaction

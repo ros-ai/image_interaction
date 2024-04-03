@@ -1,7 +1,7 @@
 repositories:
-  rviz2_sam_plugin:
+  image_interaction:
     type: git
-    url: https://github.com/ros-ai/rviz2_sam_plugin
+    url: https://github.com/ros-ai/image_interaction
     version: main
   ros_sam:
     type: git

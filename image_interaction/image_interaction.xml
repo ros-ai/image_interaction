@@ -1,0 +1,9 @@
+<library path="image_interaction">
+    <class name="image_interaction/InteractionPanel"
+        type="image_interaction::InteractionPanel"
+        base_class_type="rviz_common::Panel">
+        <description>
+            RVIZ 2 plugin for image interaction.
+        </description>
+    </class>
+</library>

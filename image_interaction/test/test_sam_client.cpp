@@ -3,7 +3,7 @@
 #include <memory>
 
 #include "rclcpp/rclcpp.hpp"
-#include "rviz2_sam_plugin/sam_client.hpp"
+#include "image_interaction/sam_client.hpp"
 #include "ros_sam_msgs/srv/segmentation.hpp"
 
 #include "ament_index_cpp/get_package_share_directory.hpp"
@@ -14,7 +14,7 @@
 class SamClientTestFixture : public ::testing::Test {
 public:
   SamClientTestFixture() : node_(rclcpp::Node::make_shared("sam_client_test")) {
-    sam_client_ = std::make_shared<rviz2_sam_plugin::SamClient>(node_);
+    sam_client_ = std::make_shared<image_interaction::SamClient>(node_);
 
     test_image_ =
         cv::imread(std::filesystem::path(ament_index_cpp::get_package_share_directory("ros_sam")) /
@@ -24,7 +24,7 @@ public:
 
 protected:
   rclcpp::Node::SharedPtr node_;
-  std::shared_ptr<rviz2_sam_plugin::SamClient> sam_client_;
+  std::shared_ptr<image_interaction::SamClient> sam_client_;
 
   // test cv2 image
   cv::Mat test_image_;
