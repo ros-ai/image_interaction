@@ -15,6 +15,7 @@ find_package(rclcpp REQUIRED)
 find_package(rviz_common REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(pluginlib REQUIRED)
+find_package(rviz_default_plugins REQUIRED)
 
 set(image_interaction_dependencies
   rclcpp
